@@ -1,5 +1,7 @@
-
-
+/**
+ * paktool -- A quick and dirty tool for extracting and creating ID PAK archives
+ * author: Jeremy Lorelli <jeremy.lorelli.1337@gmail.com>
+ */
 #include "pak.hpp"
 #include "argparse.hpp"
 
