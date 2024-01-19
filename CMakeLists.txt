@@ -10,3 +10,7 @@ add_executable(
 target_include_directories(
 	paktool PRIVATE thirdparty
 )
+
+include(GNUInstallDirs)
+install(TARGETS paktool)
+
