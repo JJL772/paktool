@@ -129,6 +129,11 @@ int main(int argc, char** argv) {
 	}
 	/* Detail querying */
 	else {
+		if (!parser.is_used("files")) {
+			fprintf(stderr, "No PAK files provided!\n");
+			exit(1);
+		}
+
 		auto archives = parser.get<std::vector<std::string>>("files");
 		for (auto& arch : archives) {
 			paklib::pak_archive archive;
